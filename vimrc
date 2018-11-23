@@ -10,10 +10,5 @@ filetype plugin on
 filetype indent on
 set backspace=2
 
-"setting up terminal
-if has("windows")
-    set shell=C:\Xilinx\Vivado_HLS\2016.3\bin\vivado_hls_cmd.bat
-	"set shell=C:\Windows\System32\bash.exe 
-endif
 
 colorscheme elflord
