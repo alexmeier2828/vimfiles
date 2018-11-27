@@ -1,3 +1,8 @@
+execute pathogen#infect()
+call plug#begin()
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+call plug#end()
 "fix window commands on windows (ctrl-w doesnt work)
 nnoremap <Leader>w <C-w>
 syntax on
@@ -9,11 +14,5 @@ filetype on
 filetype plugin on
 filetype indent on
 set backspace=2
-
-"setting up terminal
-if has("windows")
-    set shell=C:\Xilinx\Vivado_HLS\2016.3\bin\vivado_hls_cmd.bat
-	"set shell=C:\Windows\System32\bash.exe 
-endif
 
 colorscheme elflord
