@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/Users/alexmeier/.config/alacritty'
+let g:netrw_dirhist_9='/Users/alexmeier/.emacs.d'
+let g:netrw_dirhist_8='/Users/alexmeier/.emacs.d/bin'
+let g:netrw_dirhist_7='/Users/alexmeier'
+let g:netrw_dirhist_6='/Users/alexmeier/.oh-my-zsh'
+let g:netrw_dirhist_5='/Users/alexmeier/.oh-my-zsh/themes'
+let g:netrw_dirhist_4='/Users/alexmeier/.config'
+let g:netrw_dirhist_3='/Users/alexmeier/.oh-my-zsh/custom'
+let g:netrw_dirhist_2='/Users/alexmeier/.oh-my-zsh'
+let g:netrw_dirhist_1='/Users/alexmeier'
