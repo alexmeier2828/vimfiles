@@ -1,10 +1,6 @@
-execute pathogen#infect()
-call plug#begin()
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-call plug#end()
 "fix window commands on windows (ctrl-w doesnt work)
 nnoremap <Leader>w <C-w>
+imap jj <esc>
 syntax on
 
 "fix tabs
