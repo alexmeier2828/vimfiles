@@ -33,6 +33,8 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'Shougo/deoplete.nvim'
 Plug 'lighttiger2505/deoplete-vim-lsp'
 Plug 'rust-lang/rust.vim'
+Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 if executable('ccls')
