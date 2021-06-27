@@ -3,6 +3,9 @@ source ~/.config/nvim/plugins.vim
 "fix window commands on windows (ctrl-w doesnt work)
 nnoremap <Leader>w <C-w>
 
+nmap J 5j
+nmap K 5k
+
 "very important remaps
 imap jj <esc>
 "auto complete brackets
