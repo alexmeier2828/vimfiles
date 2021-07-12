@@ -17,6 +17,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'chrisbra/colorizer'
 Plug 'morhetz/gruvbox'
 Plug 'jiangmiao/auto-pairs'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 if executable('ccls')
