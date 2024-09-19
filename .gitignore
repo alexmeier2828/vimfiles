@@ -2,3 +2,8 @@ plugged/*
 plugged
 
 */.netrwhist
+.netrwhist
+nvim/.netrwhist
+
+
+.netrwhist*
