@@ -7,6 +7,17 @@ call plug#begin()
 if has('nvim')
 	"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+	" treesitter
+	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+	"telescope
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-telescope/telescope.nvim', {'tag:': 0.1.8}
+	nnoremap <leader>ff <cmd>Telescope find_files<cr>
+	nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+	nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
 else 
 	Plug 'Shougo/deoplete.nvim'
 	Plug 'roxma/nvim-yarp'

@@ -1,19 +1,19 @@
 "Source external files:
 source ~/.config/nvim/plugins.vim
+
+"map leader 
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
+
+
 "fix window commands on windows (ctrl-w doesnt work)
 nnoremap <Leader>w <C-w>
 
-nmap J 5j
-nmap K 5k
-
-"very important remaps
-imap jj <esc>
 "auto complete brackets
 "inoremap {<CR> {<CR>}<C-o>0 
 syntax on
 
-"compile commands 
-autocmd FileType rust nnoremap <buffer> .. <esc>     :!cargo check 
 "fix tabs
 set tabstop=4
 set shiftwidth=4
@@ -27,7 +27,6 @@ set number relativenumber
 
 set termguicolors
 colorscheme gruvbox
-set guifont=consolas:h14:cDEFAULT 
 
 
 "commands
@@ -35,3 +34,6 @@ command Eplug tabe ~/.config/nvim/plugins.vim
 command Econf tabe ~/.config/nvim/
 command Config tabe ~/.config/
 command Zsh tabe ~/.zshrc
+
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
