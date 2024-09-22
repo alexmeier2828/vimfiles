@@ -1,11 +1,10 @@
-"Source external files:
-source ~/.config/nvim/plugins.vim
-
-"map leader 
+"map leader - this has to go at the top as remapping the leader after any of
+"the other keymaps that touch the leader key will break the maps.
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
-
+"Source external files:
+source ~/.config/nvim/plugins.vim
 
 "fix window commands on windows (ctrl-w doesnt work)
 nnoremap <Leader>w <C-w>
@@ -35,5 +34,7 @@ command Econf tabe ~/.config/nvim/
 command Config tabe ~/.config/
 command Zsh tabe ~/.zshrc
 
+"Remaps up and down page to up and down page plus zz, which centers the view
+"on the cursor for a slightly less jarring scrolling experience.
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz

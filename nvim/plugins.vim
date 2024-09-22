@@ -3,23 +3,34 @@
 "Mappings will go inthe main vimrc file
 "plugins
 
+let g:use_deoplete_over_coc=0
+
+
 call plug#begin()
 if has('nvim')
-	"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+	if use_deoplete_over_coc == 0
+		Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	else
+		Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+	endif
 
 	" treesitter
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-	"telescope
-	Plug 'nvim-lua/plenary.nvim'
-	Plug 'nvim-telescope/telescope.nvim', {'tag:': 0.1.8}
 	nnoremap <leader>ff <cmd>Telescope find_files<cr>
 	nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 	nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
+	"telescope
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-telescope/telescope.nvim', {'tag:': 0.1.8}
+	Plug 'sakhnik/nvim-gdb'
 else 
-	Plug 'Shougo/deoplete.nvim'
+	if use_deoplete_over_coc = 1
+		Plug 'Shougo/deoplete.nvim'
+		let g:deoplete#enable_at_startup = 1
+	endif
+
 	Plug 'roxma/nvim-yarp'
 	Plug 'roxma/vim-hug-neovim-rpc'
 endif
@@ -31,7 +42,6 @@ endif
 
 call plug#end()
 
-let g:deoplete#enable_at_startup = 1
 
 
 "alacritty mouse
