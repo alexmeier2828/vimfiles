@@ -4,5 +4,6 @@
 	"zig.path": "zls",
 	"zig.debugLog": false,
 
-	"inlayHint.display": false
+	"inlayHint.display": false,
+	"suggest.noselect": true
 }

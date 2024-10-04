@@ -25,7 +25,7 @@ set backspace=2
 set number relativenumber
 
 set termguicolors
-colorscheme gruvbox
+colorscheme nord
 
 
 "commands
@@ -38,3 +38,9 @@ command Zsh tabe ~/.zshrc
 "on the cursor for a slightly less jarring scrolling experience.
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
+ 
+"enable recursive file opening 
+set path+=**
+
+" turn on mouse control
+set mouse=a

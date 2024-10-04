@@ -1,1 +1,15 @@
-init.vim
+map <space> <leader>
+inoremap <C-d> <C-d>zz
+inoremap <C-u> <C-u>zz
+
+
+call plug#begin()
+	Plug 'ziglang/zig.vim'
+	Plug 'tpope/vim-vinegar'
+	Plug 'tpope/vim-fugitive'
+	Plug 'jiangmiao/auto-pairs'
+call plug#end()
+
+filetype plugin indent on
+
+
