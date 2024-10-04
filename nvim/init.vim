@@ -25,8 +25,6 @@ set backspace=2
 set number relativenumber
 
 set termguicolors
-colorscheme nord
-
 
 "commands
 command Eplug tabe ~/.config/nvim/plugins.vim 

@@ -41,8 +41,13 @@ endif
 	Plug 'ziglang/zig.vim'
 	Plug 'tpope/vim-vinegar'
 	Plug 'tpope/vim-fugitive'
+
+	"themes 
 	Plug 'morhetz/gruvbox'
 	Plug 'fenetikm/falcon'
+	Plug 'rebelot/kanagawa.nvim'
+	colorscheme kanagawa
+
 	"Plug 'jiangmiao/auto-pairs'
 	Plug 'KabbAmine/vCoolor.vim'
 	Plug 'norcalli/nvim-colorizer.lua'
