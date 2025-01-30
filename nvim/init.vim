@@ -4,7 +4,7 @@ nnoremap <SPACE> <Nop>
 let mapleader = " "
 
 "Source external files:
-source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/config.lua
 
 "fix window commands on windows (ctrl-w doesnt work)
 nnoremap <Leader>w <C-w>
