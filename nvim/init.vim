@@ -42,3 +42,5 @@ set path+=**
 
 " turn on mouse control
 set mouse=a
+
+set guifont=JetbrainsMono\ Nerd\ Font\ Mono:h8

@@ -12,13 +12,15 @@ if has('nvim')
 
 	if use_deoplete_over_coc == 0
 		Plug 'neoclide/coc.nvim', {'branch': 'release'}
+		nnoremap <leader>gi <Plug>(coc-implementation)
+		nnoremap <leader>gd <Plug>(coc-definition)
+		nnoremap <leader>gr <Plug>(coc-references)
 	else
 		Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 	endif
 
 	" treesitter
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-	TSEnable highlight
 
 	"telescope
 	Plug 'nvim-lua/plenary.nvim'
@@ -46,10 +48,21 @@ endif
 	Plug 'morhetz/gruvbox'
 	Plug 'fenetikm/falcon'
 	Plug 'rebelot/kanagawa.nvim'
-	colorscheme kanagawa
 
 	"Plug 'jiangmiao/auto-pairs'
 	Plug 'KabbAmine/vCoolor.vim'
 	Plug 'norcalli/nvim-colorizer.lua'
 	Plug 'shaunsingh/nord.nvim'
+
+	" LaTeX 
+	Plug 'lervag/vimtex'
+	"Testing my plugin
+	Plug 'alexmeier2828/todo.nvim'
+
+	"ollama" 
+	Plug 'nomnivore/ollama.nvim'
+	
 call plug#end()
+
+" colorscheme set 
+colorscheme kanagawa
