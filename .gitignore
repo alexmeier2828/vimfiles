@@ -7,3 +7,5 @@ nvim/.netrwhist
 
 
 .netrwhist*
+lazy-lock.json
+nvim/lazy-lock.json

@@ -28,7 +28,8 @@ require("lazy").setup({
     -- add your plugins here
 	{import = "plugins" } ,
     'nvim-treesitter/nvim-treesitter',
-	'tpope/vim-fugitive'
+	'tpope/vim-fugitive',
+	'neovim/nvim-lspconfig'
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.:
@@ -47,6 +48,8 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
+-- lsp 
+-- vim.lsp.config('zls')
 
 
 
