@@ -27,9 +27,6 @@ require("lazy").setup({
   spec = {
     -- add your plugins here
 	{import = "plugins" } ,
-    'nvim-treesitter/nvim-treesitter',
-	'tpope/vim-fugitive',
-	'neovim/nvim-lspconfig'
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.:
@@ -41,15 +38,11 @@ require("lazy").setup({
 -- colorscheme
 vim.cmd([[colorscheme everforest]])
 
--- telescope 
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+-- copen maps
+vim.keymap.set('n', '<leader>cn', ':cnext<cr>', { desc = 'Go to next copen item' })
 
 -- lsp 
 -- vim.lsp.config('zls')
-
+vim.lsp.enable('hls')
 
 
