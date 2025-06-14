@@ -38,11 +38,5 @@ require("lazy").setup({
 -- colorscheme
 vim.cmd([[colorscheme everforest]])
 
--- copen maps
-vim.keymap.set('n', '<leader>cn', ':cnext<cr>', { desc = 'Go to next copen item' })
-
--- lsp 
--- vim.lsp.config('zls')
--- vim.lsp.enable('hls')
-
-
+-- hot reloadable files 
+require ('config.keymaps')
