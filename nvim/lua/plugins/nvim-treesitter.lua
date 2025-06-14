@@ -1,4 +1,9 @@
 return {
     'nvim-treesitter/nvim-treesitter',
-	lazy = true
+	branch = 'master',
+	lazy = false,
+
+	highlight = {
+		enable = true
+	}
 }
