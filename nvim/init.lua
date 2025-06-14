@@ -26,7 +26,7 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- add your plugins here
-	{import = "plugins" } ,
+	{import = "plugins" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.:
@@ -35,8 +35,5 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
--- colorscheme
-vim.cmd([[colorscheme everforest]])
-
 -- hot reloadable files 
-require ('config.keymaps')
+require ('config.hotload')
