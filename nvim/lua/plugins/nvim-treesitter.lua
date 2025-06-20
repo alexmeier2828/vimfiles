@@ -1,9 +1,20 @@
 return {
     'nvim-treesitter/nvim-treesitter',
 	branch = 'master',
+    build = ":TSUpdate",
 	lazy = false,
-
-	highlight = {
-		enable = true
-	}
+    config = function()
+        local configs = require 'nvim-treesitter.configs'
+        configs.setup {
+            ensure_installed = {
+                'haskell',
+            },
+            highlight = {
+                enable = true
+            },
+            incremental_selection = {
+                enable = true
+            }
+        }
+    end,
 }

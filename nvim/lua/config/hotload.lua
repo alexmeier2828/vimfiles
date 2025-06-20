@@ -5,6 +5,7 @@
 -- environment
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.termguicolors = true
@@ -21,4 +22,5 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'page up and center view' })
 
 -- commands
 vim.api.nvim_create_user_command('Config', [[tabedit ~/.config/nvim/lua/config/hotload.lua]], {})
+
 
