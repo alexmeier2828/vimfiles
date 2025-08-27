@@ -24,3 +24,7 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'page up and center view' })
 vim.api.nvim_create_user_command('Config', [[tabedit ~/.config/nvim/lua/config/hotload.lua]], {})
 
 
+-- lsp config
+vim.lsp.config('clangd', {
+    filetypes = { 'c' },
+  })
